@@ -1,0 +1,42 @@
+
+.header {
+  position: fixed;
+  z-index: 200;
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(to bottom, #363738,  #222);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+  font-size: 16px;
+}
+
+.navigation ul li {
+  margin-left: 20px;
+}
+
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: #aaa;
+}
+.link:active {
+  color: #aaa;
+}

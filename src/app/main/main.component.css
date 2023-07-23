@@ -1,0 +1,144 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #202020;
+  background-image: url('/assets/background.png');
+  background-size: cover; 
+  color: #fff;
+}
+.aboutme-content{
+  font-size: 23px;
+  font-style: italic;
+}
+
+.header-title{
+  transform: translateY(-20px);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex: 1;
+  text-align: center;
+  
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+
+}
+
+/* .fire {
+  position: absolute;
+  left: 30px;
+  top: 400px;
+  width: 700px;
+  height: 400px;
+  background-image: radial-gradient(circle, rgba(88, 88, 88, 0.5), rgba(250, 226, 182, 0));
+  border-radius: 5%;
+  animation: flicker 5s infinite;
+  padding: 40px;
+  
+} */
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 450px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+  transition: transform 1s;
+  animation: flicker 8s infinite;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  text-align: start;
+  font-size: 18px;
+  font-weight: bold;
+  color: #636363;
+  
+}
+
+.container {
+  padding-top: 40px;
+  transform: translateY(-10px);
+  
+}
+.card-body-left {
+  background: linear-gradient(to bottom, rgb(228, 210, 187) 0%, rgba(255, 255, 255, 1) 100%);
+  border: none;
+}
+.card-body-right {
+  background: linear-gradient(to bottom,rgba(255, 255, 255, 0.952) 0%, rgba(184, 230, 255, 0.8)  100%);
+  border: none;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    left: 215px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+
+@keyframes flicker {
+  0%, 100% {
+    box-shadow: inset 0 0 5px 5px rgba(199, 199, 199, 0.8), 0 0 10px 5px rgba(148, 148, 148, 0.5);
+  }
+  50% {
+    box-shadow: inset 0 0 20px 5px rgba(155, 155, 155, 0.5), 0 0 30px 10px rgba(255, 255, 255, 0.2);
+  }
+}
+@media (max-width: 1200px) {
+  .card {
+    height: 550px;
+  }
+}
+@media (max-width: 995px) {
+  .card {
+    height: 650px;
+  }
+  .btn{
+    bottom: 25px;
+    left: 55px;
+  }
+
+  .landing {
+    height: 120vh;
+  }
+}
+@media (max-width: 767px) {
+
+  .landing {
+    height: 190vh;
+  }
+}

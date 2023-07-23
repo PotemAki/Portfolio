@@ -1,0 +1,212 @@
+<div class="row">
+  <div class="col-3">
+    <nav class="sidebar" [@fadeInOutSideBar]>
+      <ul>
+        <p class="side-nav-text" ><a class="link" (click)="scroll(angular)">Angular</a></p>
+        <p class="side-nav-text" ><a class="link" (click)="scroll(javascript)">JavaScript</a></p>
+        <p class="side-nav-text"><a class="link" href="https://github.com/PotemAki?tab=repositories" target=”_blank”>GitHub</a></p>
+      </ul>
+    </nav>
+  </div>
+  <div class="col-12">
+    
+    <div #angular class="card mb-4" id="angular-section" [@fadeInOut]>
+      <div class="card-body-up">
+        <div>
+           <h5 class="card-title">Angular</h5>
+        </div>
+        <div>
+          <div class="project-element-little">
+            
+            <!-- info tab -->
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+                <img class="icon" src="assets/info-icon.png">
+                <div class="info-message" *ngIf="showMessage">
+                  <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/generate-cv" target=”_blank”>Get GitHub Repository</a></p>
+                  <hr>
+                  <p class="info-text">A simple CV generator, that let us build and download nice CV.</p>
+                  <ul class="info-list">
+                    <li>We can insert "about-me" tab,</li>
+                    <li>We can list multiple educations elements or two education elements + courses,</li>
+                    <li>We can add multiple experience elements, two of them can be detailed,</li>
+                    <li>We can add multiple languages and additional informations,</li>
+                    <li>We can input link to our portfolio and give that link specific name,</li>
+                    <li>We can download our CV in PDF format (link to portfolio still works) - this is recommend to be done on deskopt.</li>
+                  </ul>
+                </div>
+            </div>
+            <a href="https://potemaki.github.io/generate-cv/generate-app#/generate" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/generate-app.png">
+              <div class="project-overlay">
+                <span class="project-name">Generate CV App</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/todo-app" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">A simple ToDo List</p>
+                <ul class="info-list">
+                  <li>We can add new elements,</li>
+                  <li>We can edit existing elements,</li>
+                  <li>We can move elements to archive which will add to our archived element date of completion.</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://potemaki.github.io/todo-app/" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/todo-app.png">
+              <div class="project-overlay">
+                <span class="project-name">ToDo List App</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/login-app" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">Login App with notes</p>
+                <ul class="info-list">
+                  <li>App connects to firebase,</li>
+                  <li>We can create account and login,</li>
+                  <li>We can recieve forgot password email,</li>
+                  <li>App will automatically log us out after 1h,</li>
+                  <li>We can login and then edit our details: display name and password,</li>
+                  <li>We can create notes that are assigned to our account.</li>
+                </ul>
+              </div>
+          </div>
+            <a href="https://potemaki.github.io/login-app/#/auth" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/login-app.png">
+              <div class="project-overlay">
+                <span class="project-name">Login App</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/weather-app" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">Weather App</p>
+                <ul class="info-list">
+                  <li>App sends http request to API server,</li>
+                  <li>We can search cities and check current time, weather, humidity and wind,</li>
+                  <li>App look will change depending on weather and day/night time.</li>
+                </ul>
+              </div>
+          </div>
+            <a href="https://potemaki.github.io/weather-app/" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/weather-app.png">
+              <div class="project-overlay">
+                <span class="project-name">Weather App</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div #javascript class="card-down mb-4" id="angular-section" [@fadeInOut]>
+      <div class="card-body-up">
+        <div>
+           <h5 class="card-title-down">JavaScript</h5>
+        </div>
+        <div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message-js" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/Rock-Paper-Scissors" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">Rock Paper Scissors Game.</p>
+              </div>
+          </div>
+            <a href="https://potemaki.github.io/Rock-Paper-Scissors/" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/js-rock-papper-scissors.png">
+              <div class="project-overlay">
+                <span class="project-name">Rock Paper Scissors</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message-js" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/Convert-Values" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">Convert-Values.</p>
+              </div>
+            </div>
+            <a href="https://potemaki.github.io/Convert-Values/" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/js-convert.png">
+              <div class="project-overlay">
+                <span class="project-name">Convert Values</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message-js" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/GenerateColor" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">Generate Color</p>
+              </div>
+          </div>
+            <a href="https://potemaki.github.io/GenerateColor/" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/js-generate-color.png">
+              <div class="project-overlay">
+                <span class="project-name">Generate Color</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message-js" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/Calculator" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">Calculator</p>
+              </div>
+          </div>
+            <a href="https://potemaki.github.io/Calculator/"  class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/js-calculator.png">
+              <div class="project-overlay">
+                <span class="project-name">Calculator</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-element-little">
+            <div class="info-icon" (mouseenter)="showMessage = true" (mouseleave)="showMessage = false">
+              <img class="icon" src="assets/info-icon.png">
+              <div class="info-message-js" *ngIf="showMessage">
+                <p class="side-nav-text"><a class="info-header" href="https://github.com/PotemAki/StopWatch" target=”_blank”>Get GitHub Repository</a></p>
+                <hr>
+                <p class="info-text">StopWatch</p>
+              </div>
+          </div>
+            <a href="https://potemaki.github.io/StopWatch/" class="project-link" target=”_blank”>
+              <img class="img-project" src="assets/js-stopwatch.png">
+              <div class="project-overlay">
+                <span class="project-name">StopWatch</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
