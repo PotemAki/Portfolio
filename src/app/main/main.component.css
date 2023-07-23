@@ -6,7 +6,7 @@
   align-items: center;
   text-align: center;
   background-color: #202020;
-  background-image: url('/assets/background.png');
+  /* background: url('/assets/background.png'); */
   background-size: cover; 
   color: #fff;
 }
