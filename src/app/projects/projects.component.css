@@ -250,10 +250,16 @@
   }
  
 }
-@media (max-width: 705px) {
+@media (max-width: 912px) {
   .project-link {
-    margin-left: 80px;
+    margin-left: 130px;
     width: 200px;
+  }
+  .info-icon {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    cursor: pointer;
   }
   .sidebar {
     width: 100px;
@@ -275,3 +281,4 @@
     justify-content: center;
   }
 }
+

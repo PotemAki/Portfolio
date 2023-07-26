@@ -142,3 +142,34 @@ p {
     height: 190vh;
   }
 }
+@media (max-height: 960px) {
+  .card {
+    height: 550px;
+  }
+  .btn{
+    bottom: 25px;
+    left: 80px;
+  }
+
+  .landing {
+    height: 200vh;
+  }
+}
+@media (max-height: 810px) {
+
+  .landing {
+    height: 220vh;
+  }
+}
+@media (max-height: 735px) {
+
+  .landing {
+    height: 300vh;
+  }
+}
+@media (max-height: 535px) {
+
+  .landing {
+    height: 350vh;
+  }
+}
