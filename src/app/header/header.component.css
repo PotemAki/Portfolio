@@ -25,15 +25,17 @@
   letter-spacing: 2px;
   text-decoration: none;
   color: #ffffff; 
-  background-color: #3f3f3f; 
+  background-color: #303030; 
   padding: 6px 30px;
   border-radius: 4px; 
-  transition: background-color 0.3s ease; 
+  transition: 0.5s ease; 
 }
 
 
 .logo-text:hover {
-  color: aliceblue; 
+  color: rgb(34, 34, 34); 
+  background-color: #ffffff;
+  opacity: 0.9;
 }
 
 
@@ -81,4 +83,17 @@
 .header-btn.active{
   background-color: rgb(255, 255, 255);
   color: black;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+  .navigation ul {
+    margin-left: -35px;
+  }
+  .header {
+    justify-content: start;
+
+  }
 }
