@@ -1,4 +1,4 @@
-import { animate, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -15,7 +15,28 @@ import { Component } from '@angular/core';
       trigger('fadeInOutSideBar', [
         transition(':enter', [
           style({ opacity: 0, transform: 'translateY(0px)' }), 
-          animate('500ms ease-in', style({ opacity: 1, transform: 'translateY(0px)' })),
+          animate('200ms ease-in', style({ opacity: 1, transform: 'translateY(0px)' })),
+        ]),
+      ]),
+      trigger('slideSide1', [
+        state('in', style({ transform: 'translateX(0)' })),
+        transition('void => *', [
+          style({ transform: 'translateX(-300%)' }),
+          animate('200ms ease-in')
+        ]),
+      ]),
+      trigger('slideSide2', [
+        state('in', style({ transform: 'translateX(0)' })),
+        transition('void => *', [
+          style({ transform: 'translateX(-300%)' }),
+          animate('300ms ease-in')
+        ]),
+      ]),
+      trigger('slideSide3', [
+        state('in', style({ transform: 'translateX(0)' })),
+        transition('void => *', [
+          style({ transform: 'translateX(-300%)' }),
+          animate('400ms ease-in')
         ]),
       ]),
     ],,

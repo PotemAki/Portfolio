@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-3">
-    <nav class="sidebar" [@fadeInOutSideBar]>
+    <nav class="sidebar" >
       <ul>
-        <p class="side-nav-text" ><a class="link" (click)="scroll(angular)">Angular</a></p>
-        <p class="side-nav-text" ><a class="link" (click)="scroll(javascript)">JavaScript</a></p>
-        <p class="side-nav-text"><a class="link" href="https://github.com/PotemAki?tab=repositories" target=”_blank”>GitHub</a></p>
+        <p class="side-nav-text" [@slideSide1]="true"><a class="link" (click)="scroll(angular)">Angular</a></p>
+        <p class="side-nav-text" [@slideSide2]="true"><a class="link" (click)="scroll(javascript)">JavaScript</a></p>
+        <p class="side-nav-text" [@slideSide3]="true"><a class="link" href="https://github.com/PotemAki?tab=repositories" target=”_blank”>GitHub</a></p>
       </ul>
     </nav>
   </div>
@@ -114,7 +114,7 @@
         </div>
       </div>
     </div>
-    <div #javascript class="card-down mb-4" id="angular-section" [@fadeInOut]>
+    <div #javascript class="card-down mb-4" id="angular-section">
       <div class="card-body-up">
         <div>
            <h5 class="card-title-down">JavaScript</h5>
