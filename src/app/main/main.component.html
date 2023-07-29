@@ -1,16 +1,16 @@
 <section class="landing" style="background-image: url('assets/background.png')">
   <div class="land-page">
-    <div class="header-title" [@fadeInOut]>
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I'm Michał Matyka, a beginner developer.</p>
+    <div class="header-title">
+      <h1 [@slideSide1]="true">Welcome to My Portfolio</h1>
+      <p [@slideSide2]="true">Hi, I'm Michał Matyka, a beginner developer.</p>
     </div>
 
   </div>
-  <div class="container" [@fadeInOutbody]>
-    <h4 class="text-center mb-4">Where you wanna go from here?</h4>
+  <div class="container">
+    <h4 class="text-center mb-4" [@fadeInOutbody]>Where you wanna go from here?</h4>
     <div class="row">
       <div class="col-md-6">
-        <div class="card card-body-left mb-4">
+        <div class="card card-body-left mb-4" [@slideUp1]="true">
           
           <div class="card-body">
             <h5 class="card-title">About me</h5>
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card card-body-right mb-4">
+        <div class="card card-body-right mb-4" [@slideUp2]="true">
           
           <div class="card-body" >
             <h5 class="card-title">Check my projects</h5>

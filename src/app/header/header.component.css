@@ -12,15 +12,29 @@
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo-text{
+
+.logo-text {
+  font-family: "Freestyle Script";
+  font-size: 26px;
+  letter-spacing: 2px;
   text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
+  color: #ffffff; 
+  background-color: #3f3f3f; 
+  padding: 6px 30px;
+  border-radius: 4px; 
+  transition: background-color 0.3s ease; 
 }
+
+
+.logo-text:hover {
+  color: aliceblue; 
+}
+
+
 .navigation ul {
   list-style: none;
   display: flex;
@@ -40,8 +54,29 @@
 }
 
 .navigation ul li a:hover {
-  color: #aaa;
+  color: #000000;
+}
+.navigation ul li a.active {
+  color: #000000;
 }
 .link:active {
   color: #aaa;
+}
+.header-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 20px;
+  font-size: 16px;
+  color: white;
+  border: 2px solid white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.header-btn:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.header-btn.active{
+  background-color: rgb(255, 255, 255);
+  color: black;
 }

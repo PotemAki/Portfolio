@@ -1,4 +1,4 @@
-import { trigger, transition, style, animate } from '@angular/animations';
+import { trigger, transition, style, animate, state } from '@angular/animations';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -15,7 +15,35 @@ import { ActivatedRoute, Router } from '@angular/router';
     ]),trigger('fadeInOutbody', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(0px)' }), 
-        animate('1000ms ease-in', style({ opacity: 1, transform: 'translateY(-10px)' })), 
+        animate('600ms ease-in', style({ opacity: 1, transform: 'translateY(0px)' })), 
+      ]),
+    ]),
+    trigger('slideUp1', [
+      state('in', style({ transform: 'translateY(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateY(5%)' }),
+        animate('200ms ease-in')
+      ]),
+    ]),
+    trigger('slideUp2', [
+      state('in', style({ transform: 'translateY(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateY(5%)' }),
+        animate('400ms ease-in')
+      ]),
+    ]),
+    trigger('slideSide1', [
+      state('in', style({ transform: 'translateX(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateX(-500%)' }),
+        animate('400ms ease-in')
+      ]),
+    ]),
+    trigger('slideSide2', [
+      state('in', style({ transform: 'translateX(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateX(-500%)' }),
+        animate('600ms ease-in')
       ]),
     ]),
   ],
