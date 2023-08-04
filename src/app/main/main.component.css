@@ -124,7 +124,7 @@ p {
 }
 @media (max-width: 995px) {
   .card {
-    height: 650px;
+    height: 600px;
   }
   .btn{
     bottom: 25px;
@@ -138,37 +138,33 @@ p {
 @media (max-width: 767px) {
 
   .landing {
-    height: 190vh;
+    height: 150vh;
   }
 }
 @media (max-height: 960px) {
-  .card {
-    height: 550px;
+  .land-page {
+    margin-top: 100px;
   }
-  .btn{
-    bottom: 25px;
-    left: 80px;
-  }
-
-  .landing {
-    height: 200vh;
-  }
+  
 }
-@media (max-height: 810px) {
+@media (max-height: 850px) {
 
   .landing {
-    height: 220vh;
+    height: 100%;
   }
+  .land-page {
+    margin-top: 200px;
+  }
+ 
 }
 @media (max-height: 735px) {
 
-  .landing {
-    height: 300vh;
+  
+  .land-page {
+    margin-top: 200px;
   }
 }
-@media (max-height: 535px) {
+@media (max-height: 614px) {
 
-  .landing {
-    height: 350vh;
-  }
+  
 }

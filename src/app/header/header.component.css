@@ -85,7 +85,7 @@
   color: black;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 541px) {
   .logo {
     display: none;
   }
