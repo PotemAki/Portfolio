@@ -55,15 +55,15 @@
 .card{
 
   background: linear-gradient(to bottom,rgba(255, 255, 255, 0.8) 0%, rgba(188, 219, 236, 0.8)  100%);
-  margin-left: 150px;
-  width: 105%;
+  margin-left: 100px;
+  width: 110%;
 }
 .card-down{
   margin-top: -30px;
   /* background-color: rgb(240, 224, 204); */
   background: linear-gradient(to bottom, rgba(240, 224, 204, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
-  margin-left: 150px;
-  width: 105%;
+  margin-left: 100px;
+  width: 110%;
 }
 
 /* .card:hover{
