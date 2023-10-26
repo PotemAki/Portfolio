@@ -9,7 +9,7 @@ import { CvComponent } from './main/cv/cv.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full'},
-  { path: 'main', component: MainComponent },
+  { path: 'main', redirectTo: '/not-found' },
   { path: 'projects', component: ProjectsComponent },
   { path: 'not-found', component: NotFoundComponent },
   { path: 'cv', component: CvComponent},
